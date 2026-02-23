@@ -15,6 +15,8 @@ class Transaction
     #[ORM\Column]
     private ?int $id = null;
 
+    #[Assert\NotBlank]
+    #[Assert\Positive]
     #[ORM\Column]
     private ?float $amount = null;
 
